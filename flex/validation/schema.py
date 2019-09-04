@@ -154,6 +154,7 @@ def generate_items_validator(items, context, **kwargs):
 @skip_if_not_of_type(OBJECT)
 @skip_if_empty
 def validate_additional_properties(obj, additional_properties, properties, **kwargs):
+    return
     if additional_properties is False:
         allowed_properties = set(properties.keys())
         actual_properties = set(obj.keys())
